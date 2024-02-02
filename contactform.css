@@ -87,6 +87,131 @@ body {
 /*HK2 down*/
 
 
+.backgroundForm {
+  display: flex;
+  width: 50%;
+  height: 480px;
+  background-color: rgb(0, 0, 0);
+  margin: 29px;
+  padding: 20px 20px;
+  border: 12px solid transparent;
+  border-radius: 40px;
+}
+
+.backgroundForm h1 {
+  font-family: "Croissant One", cursive;
+  font-family: "Libre Baskerville", serif;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+
+form #subject, #name, #email, #phone {
+    background-color:#d9d9d9;
+    margin-top: 9px;
+    width: 90%;
+    height: 20px;
+    margin-left: 20px;
+    padding: 10px 10px;
+    border-width: 0 0 0 10px; 
+    border-color: rgb(255, 2, 2);
+    border-radius: 5px;
+    color: #000000;
+    font-family: "Croissant One", cursive;
+    font-size: 20px;
+  
+}
+form #name::placeholder {
+  color: #575757;
+  font-family: "Croissant One", cursive;
+  font-size: 15px;
+  text-align: start;
+}
+form #email::placeholder {
+  color: #575757;
+  font-family: "Croissant One", cursive;
+  font-size: 15px;
+  text-align: start;
+  
+}
+
+form #phone::placeholder {
+  color: #575757;
+  font-family: "Croissant One", cursive;
+  font-size: 15px;
+  text-align: start;
+  
+}
+
+form #subject::placeholder {
+  color: #575757;
+  font-family: "Croissant One", cursive;
+  font-size: 15px;
+  text-align: center;
+  
+}
+
+form #hM{
+  color: white;
+  font-family: "Croissant One", cursive;
+  font-size: 10px;
+  padding: 10px;
+}
+
+form #message {
+  background-color: rgb(0, 0, 0);
+  margin-top: 7px;
+  width: 90%;
+  height: 40px;
+  margin-left: 20px;
+  padding: 10px 10px;
+  border: none;
+  border-bottom: 5px rgb(233, 232, 232) solid;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: "Croissant One", cursive;
+  font-size: 15px;
+}
+
+form .sendContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form #send {
+  width: 50%;
+  height: 50px;
+  font-family: "Croissant One", cursive;
+  margin: 19px;
+  border: none;
+  border-radius: 12px;
+  background-color:  #b8fd98;
+}
+form #send:hover {
+  color: rgb(253, 252, 252);
+  background-color: rgba(0, 255, 38, 0.5);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+form #see{
+  width: 50%;
+  height: 50px;
+  font-family: "Croissant One", cursive;
+  margin: 19px;
+  border: none;
+  border-radius: 12px;
+  background-color:  #b8fd98;
+  
+}
+
+.back .Icon_form img {
+  width: 100%;
+  height: auto;
+}
+
+
 /**responmsivre**/
 @media screen and (max-width: 500px){
   .header{
