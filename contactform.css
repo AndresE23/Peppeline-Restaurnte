@@ -211,6 +211,60 @@ form #see{
   height: auto;
 }
 
+footer {
+  width: 100%;
+  padding: 5px;
+  background-size: cover;
+}
+
+.container_footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 100px;
+}
+.box_footer {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.box_footer .logo img {
+  width: 190px;
+}
+
+.box_footer .terms {
+  max-width: 350px;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #7a7a7a;
+  font-family: "Libre Baskerville", serif;
+}
+
+.box_footer h2 {
+  margin-bottom: 30px;
+  color: #24303c;
+  font-weight: 700px;
+}
+
+.box_footer a {
+  text-decoration: none;
+  color: #433d3d91;
+  font-weight: 600px;
+}
+
+.box_footer a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.box_derechos {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0 40px;
+}
 
 /**responmsivre**/
 @media screen and (max-width: 500px){
