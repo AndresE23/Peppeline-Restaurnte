@@ -1,0 +1,441 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color:#ffffff;
+}
+
+
+/*Web design*/
+.header{
+  z-index: 100;
+  width: 100%;
+  top: 0;
+  background-color:#ffd6bd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85px;
+  padding: 5px ;
+  position: sticky;
+}
+
+.header .logo {
+  cursor: pointer;
+}
+.header .logo img{
+  height: 70px;
+}
+.header .logo img:hover{
+  transform: scale(1.2);
+}
+.header .nav-links{
+  list-style: none;
+}
+
+.header .nav-links li{
+  display: inline-block;
+  padding: 0 20px;
+
+}
+.header .nav-links a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 20px;
+  position: relative;
+}
+ .link::after{
+  color: black;
+  content: "";
+  height: 3px;
+  width: 100%;
+  background: rgb(255, 0, 0);
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  opacity: 0;
+  transition: all 0.2s;
+  pointer-events: none;
+}
+.link:hover::after{
+  opacity: 1;
+}
+
+
+.containerBack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.back {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 150vh;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #b8fd98;
+  padding: 40px;
+  border-radius: 10px 90px 10px 90px;
+}
+
+/*HK2 down*/
+
+
+.backgroundForm {
+  display: flex;
+  width: 50%;
+  height: 480px;
+  background-color: rgb(0, 0, 0);
+  margin: 29px;
+  padding: 20px 20px;
+  border: 12px solid transparent;
+  border-radius: 40px;
+}
+
+.backgroundForm h1 {
+  font-family: "Croissant One", cursive;
+  font-family: "Libre Baskerville", serif;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+
+form #subject, #name, #email, #phone {
+    background-color:#d9d9d9;
+    margin-top: 9px;
+    width: 90%;
+    height: 20px;
+    margin-left: 20px;
+    padding: 10px 10px;
+    border-width: 0 0 0 10px; 
+    border-color: rgb(255, 2, 2);
+    border-radius: 5px;
+    color: #000000;
+    font-family: "Croissant One", cursive;
+    font-size: 20px;
+  
+}
+form #name::placeholder {
+  color: #575757;
+  font-family: "Croissant One", cursive;
+  font-size: 15px;
+  text-align: start;
+}
+form #email::placeholder {
+  color: #575757;
+  font-family: "Croissant One", cursive;
+  font-size: 15px;
+  text-align: start;
+  
+}
+
+form #phone::placeholder {
+  color: #575757;
+  font-family: "Croissant One", cursive;
+  font-size: 15px;
+  text-align: start;
+  
+}
+
+form #subject::placeholder {
+  color: #575757;
+  font-family: "Croissant One", cursive;
+  font-size: 15px;
+  text-align: center;
+  
+}
+
+form #hM{
+  color: white;
+  font-family: "Croissant One", cursive;
+  font-size: 10px;
+  padding: 10px;
+}
+
+form #message {
+  background-color: rgb(0, 0, 0);
+  margin-top: 7px;
+  width: 90%;
+  height: 40px;
+  margin-left: 20px;
+  padding: 10px 10px;
+  border: none;
+  border-bottom: 5px rgb(233, 232, 232) solid;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: "Croissant One", cursive;
+  font-size: 15px;
+}
+
+form .sendContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form #send {
+  width: 50%;
+  height: 50px;
+  font-family: "Croissant One", cursive;
+  margin: 19px;
+  border: none;
+  border-radius: 12px;
+  background-color:  #b8fd98;
+}
+form #send:hover {
+  color: rgb(253, 252, 252);
+  background-color: rgba(0, 255, 38, 0.5);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+form #see{
+  width: 50%;
+  height: 50px;
+  font-family: "Croissant One", cursive;
+  margin: 19px;
+  border: none;
+  border-radius: 12px;
+  background-color:  #b8fd98;
+  
+}
+
+.back .Icon_form img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  width: 100%;
+  padding: 5px;
+  background-size: cover;
+}
+
+.container_footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 100px;
+}
+.box_footer {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.box_footer .logo img {
+  width: 190px;
+}
+
+.box_footer .terms {
+  max-width: 350px;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #7a7a7a;
+  font-family: "Libre Baskerville", serif;
+}
+
+.box_footer h2 {
+  margin-bottom: 30px;
+  color: #24303c;
+  font-weight: 700px;
+}
+
+.box_footer a {
+  text-decoration: none;
+  color: #433d3d91;
+  font-weight: 600px;
+}
+
+.box_footer a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.box_derechos {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0 40px;
+}
+
+/**responmsivre**/
+@media screen and (max-width: 500px){
+  .header{
+    z-index: 999999;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 45px;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .header .logo img{
+    height: 30px;
+    width: auto;
+  }
+
+  .header .nav-links li{
+    display: inline-block;
+    padding: 0;
+  
+  }
+  .header .nav-links a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 10px;
+    position: relative;
+  }
+
+  .header .nav-links{
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .back {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+    height: 390px;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 0.5);
+    padding: 10px;
+    border: 5px solid rgba(255, 0, 0, 0.5);
+    border-radius: 10px 90px 10px 90px;
+  }
+  .back .Icon_form img {
+    display: none;
+  }
+
+  .box_footer .terms{
+    max-width: 250px;
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 12px;
+    color: #7a7a7a;
+    font-family: 'Libre Baskerville', serif;
+  }
+  .box_footer p{
+    font-size: 13px;
+  }
+  .box_derechos p{
+  font-size: 13px;
+  color: rgb(0, 0, 0);
+  }
+
+
+  /*JJ3*/
+  .backgroundForm {
+    width: 100%;
+    height: 290px;
+    margin: 0;
+    padding: 20px 20px;
+    border: 10px solid transparent;
+    border-radius: 30px;
+  }
+
+  .backgroundForm h1{
+    font-size: 20px;
+  }
+
+  form #name, #phone, #subject, #email {
+    margin-top: 9px;
+    width: 90%;
+    height: 10px;
+    margin-left: 10px;
+    padding: 5px 5px;
+    border-width: 0 0 0 10px; 
+    border-color: aqua;
+    border-radius: 5px;
+    color: #000000;
+    font-family: "Croissant One", cursive;
+    font-size: 10px; 
+}
+form #name::placeholder {
+  font-size: 7px;
+}
+form #message {
+  margin-top: 5px;
+  width: 90%;
+  height: 30px;
+  margin-left: 6px;
+  padding: 5px 5px;
+  font-size: 7px;
+}
+
+form #send {
+  font-size: 9px;
+  width: 50%;
+  height: 30px;
+  margin: 8px;
+  border-radius: 7px;
+}
+
+form #see {
+  font-size: 9px;
+  width: 50%;
+  height: 30px;
+  margin: 8px;
+  border-radius: 7px;
+}
+
+  
+
+}
+  @media screen and (max-width: 843px){
+
+    .header .nav-links a{
+      font-size: 19px;
+    }
+    /*DD4*/
+    form #name, #phone, #subject, #email {
+      margin-top: 19px;
+      padding: 8px 8px;
+      border-width: 0 0 0 10px; 
+      border-radius: 5px;
+      font-size: 10px; 
+  }
+  .back {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+    height: 790px;
+    align-items: center;
+    background-color: rgba(0, 255, 255, 0.5);
+    padding: 10px;
+    border: 5px solid rgba(0, 255, 255, 0.5);
+    border-radius: 10px 90px 10px 90px;
+  }
+
+  .backgroundForm {
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    padding: 60px 60px;
+    border: 10px solid transparent;
+    border-radius: 30px;
+  }
+  form #message {
+    margin-top: 5px;
+    width: 90%;
+    height: 60px;
+    margin-left: 6px;
+    padding: 5px 5px;
+    font-size: 7px;
+  }
+
+
+  .back .Icon_form img {
+    display: none;
+  }
+
+  }

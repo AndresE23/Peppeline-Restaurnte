@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peppeline - Contáctanos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/0808fde3d7.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="contactform.css">
+<link rel="shortcut icon" href="/img/logo2.png" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+         <a href="/Html/index.html"><img src="/img/logo2.png" alt=""></a> 
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="/Html/index.html"  class="link">Inicio</a></li>
+            <li><a href="/contactforn.html" class="link" target="_blank">Contáctanos</a></li>
+            <li><a href="" class="link">Nuestros servicios</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+      <!--Formulario-->
+      <main>
+        <div class="containerBack">
+          <div class="back">
+            <div class="backgroundForm">
+              <form id="contactForm">
+                <h1>Contáctanos</h1>
+                <input type="text" id="name" placeholder="Nombre" required>
+                <input type="email" id="email" placeholder="Correo Electronico" required>
+                <input type="tel" id="phone" placeholder="Numero Celular">
+                <input type="text" id="subject" placeholder="¡Dejanos un mensaje!" required>
+                <label for="message" id="hM">Mensaje:</label>
+                <textarea id="message" required></textarea>
+                <div class="sendContainer">
+                    <input type="button" id="send" value="Enviar" onclick="guardarDatos()">
+                    <input type="button" id="see" value="Ver Datos Guardados" onclick="verDatosGuardados()">
+                </div>
+            </form>
+          </div>
+        </div> 
+      </main>
+     
+      <footer>
+        <div class="container_footer">
+          <div class="box_footer">
+            <div class="logo">
+              <img src="/img/logo2.png" alt="">
+            </div>
+            <div class="terms">
+              <p>Ubicado en el corazón de <b>Medellín</b> Colombia, Peppeline te invita a disfrutar de una experiencia culinaria única,
+                donde la auténtica tradición italiana se fusiona con los sabores contemporáneos. Nuestro compromiso es brindarte platos exquisitos,
+                elaborados con ingredientes frescos y de la más alta calidad.</p>
+            </div>
+          </div>
+          <div class="box_footer">
+            <h2>Domicilios</h2>
+            <a href="#">Tel: 2212324 </a>
+            <br>
+            <a href="#">Cel: +57 3126580396 </a>
+            <br>            
+            <a href="#">Cel: +1 445678 </a>
+            <br>
+            <a href="#">Cra 8A #6B sur Poblado Medellín  </a>
+          </div>
+          
+        <div class="box_footer">
+          <h2>Redes Sociales </h2>
+          <a href="" target="_blank"><i class="fa-brands fa-facebook" style="color: #000000;"></i> Facebook </a>
+          <hr>
+          <a href="" target="_blank"><i class="fa-brands fa-instagram" style="color: #000000;"></i> Instagram</a>
+          <hr>
+          <a href="" target="_blank"><i class="fa-brands fa-youtube" style="color: #080808;"></i> Youtube </a>
+          <hr>
+          <a href="" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #000000;"></i> WhatsApp </a>
+        </div>
+    
+        <div class="box_derechos">
+          <hr>
+          <p>Andres Elias Arroyo Gonzalez Dev @2024</p>
+        </div>
+    </footer>
+       
+
+    <script src="/JS/form.js"></script>
+</body>
+</html>
